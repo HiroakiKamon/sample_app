@@ -13,7 +13,8 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development, :test do
   gem 'mysql2'
-  gem 'rspec-rails', '2.13.1'
+
+ gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
   # gem 'guard-rspec', '2.5.0'
   # gem 'spork-rails', '4.0.0'
