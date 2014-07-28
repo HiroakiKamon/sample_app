@@ -27,7 +27,7 @@ development:
 test:
   <<: *default
   database: sample_app_test
-
+  host: localhost
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -47,8 +47,18 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: sample_app_production
-  username: sample_app
-  password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
+#production:
+ # <<: *default
+ # database: sample_app_production
+ # username: sample_app
+ # password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
+
+encoding: utf8  
+  adapter: postgresql  
+  port: 5432  
+  username: hkamorisun@gmail.com
+  host: localhost
+  database: postgres://zruykzyepnvwkm:waZXFpN0C9E5058613bkt4fNEd@ec2-54-225-239-184.compute-1.amazonaws.com:5432/d5rlqqjfbkfnk2 
+  password: HKhk0221
+
+
