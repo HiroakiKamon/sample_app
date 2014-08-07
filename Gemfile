@@ -12,10 +12,13 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development, :test do
   gem 'mysql2'
-
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
  gem 'rspec-rails', '2.13.1'
+  gem 'spring-commands-rspec'
   # The following optional lines are part of the advanced setup.
-  # gem 'guard-rspec', '2.5.0'
+   gem 'guard-rspec', '2.5.0'
+  gem 'spring'
+  gem 'terminal-notifier-guard'
   # gem 'spork-rails', '4.0.0'
   # gem 'guard-spork', '1.5.0'
   # gem 'childprocess', '0.3.6'
