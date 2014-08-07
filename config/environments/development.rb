@@ -6,8 +6,6 @@ SampleApp::Application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
-mattr_accessor :dump_schema_after_migration
-  config.active_record.dump_schema_after_migration = false
   # Do not eager load code on boot.
   config.eager_load = false
 
